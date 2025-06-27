@@ -12,7 +12,6 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
     title,
     category,
     _id,
-    image,
     description,
   } = post;
   return (
@@ -47,7 +46,7 @@ const StartupCard = ({ post }: { post: StartupTypeCard }) => {
             <p className="startup-card_desc">
                 {description}
             </p>
-            <img src={image} alt="placeholder" className="startup-card_img" />
+            <img src="https://source.unsplash.com/random/300x200" alt="placeholder" className="startup-card_img" />
         </Link>
         <div className="flex-between mt-5">
             <Link href={`/?query=${category.toLowerCase()}`} className="text-16-semibold">
